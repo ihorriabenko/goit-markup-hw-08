@@ -710,6 +710,18 @@ body {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+  .activity {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .activity {
+    display: none;
+  }
+}
+
 .team {
   padding: 94px 0;
   background-color: #F5F4FA;
