@@ -8,6 +8,7 @@
     <title>Cтудия</title>
     <link rel="stylesheet" href="./dist/css/main.min.css" />
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
@@ -41,8 +42,8 @@
             <!-- header burger -->
 
             <!-- header burger button -->
-            <button class="header__button" type="button" data-menu-open><svg
-                    class="header__burger" aria-label="переключатель мобильного меню">
+            <button class="header__button" type="button" data-menu-open><svg class="header__burger"
+                    aria-label="переключатель мобильного меню">
                     <use class="header__burger-icon" href="./images/mobile/header__burger.svg#header__burger-icon">
                     </use>
                 </svg>
@@ -52,10 +53,10 @@
             <div class="mobile-menu is-hidden" data-menu>
                 <div class="mobile-menu__modal">
                     <div class="mobile-menu__icon-div" data-menu-close>
-                    <svg class="mobile-menu__icon">
-                        <use href="./images/mobile/header__burger.svg#header__close-icon"></use>
-                    </svg>
-                </div>
+                        <svg class="mobile-menu__icon">
+                            <use href="./images/mobile/header__burger.svg#header__close-icon"></use>
+                        </svg>
+                    </div>
                     <nav class="mobile-menu__nav">
 
                         <ul class="mobile-menu__list">
@@ -69,21 +70,27 @@
                         </ul>
                     </nav>
                     <div class="mobile-menu__container-inner">
-                    <ul class="mobile-menu__contacts">
-                        <li class="mobile-menu__item-contacts"><a class="mobile-menu__link-contacts-tel" href="tel:380961111111">+38 096 111 11 11</a>
-                        </li>
-                        <li class="mobile-menu__item-contacts">
-                            <a class="mobile-menu__link-contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                    </ul>
+                        <ul class="mobile-menu__contacts">
+                            <li class="mobile-menu__item-contacts"><a class="mobile-menu__link-contacts-tel"
+                                    href="tel:380961111111">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-menu__item-contacts">
+                                <a class="mobile-menu__link-contacts-email"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
 
-                    <ul class="mobile-menu__socials">
-                        <li class="mobile-menu__item-socials"><a href="#" class="mobile-menu__link-socials">Instagram</a></li>
-                        <li class="mobile-menu__item-socials"><a href="#" class="mobile-menu__link-socials">Twitter</a></li>
-                        <li class="mobile-menu__item-socials"><a href="#" class="mobile-menu__link-socials">Facebook</a></li>
-                        <li class="mobile-menu__item-socials"><a href="#" class="mobile-menu__link-socials">LinkedIn</a></li>
-                    </ul>
-                </div>
+                        <ul class="mobile-menu__socials">
+                            <li class="mobile-menu__item-socials"><a href="#"
+                                    class="mobile-menu__link-socials">Instagram</a></li>
+                            <li class="mobile-menu__item-socials"><a href="#"
+                                    class="mobile-menu__link-socials">Twitter</a></li>
+                            <li class="mobile-menu__item-socials"><a href="#"
+                                    class="mobile-menu__link-socials">Facebook</a></li>
+                            <li class="mobile-menu__item-socials"><a href="#"
+                                    class="mobile-menu__link-socials">LinkedIn</a></li>
+                        </ul>
+                    </div>
 
                 </div>
 
@@ -95,49 +102,61 @@
 
     <main>
         <!-- hero -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container container--hero">
                 <h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
         <!-- benefits -->
-        <!-- <section class="benefits">
+        <section class="benefits">
+
             <h2 class="visually-hidden">Наши преимущества</h2>
             <div class="container container--benefits">
                 <ul class="benefits__list">
                     <li class="benefits__item">
+                    <div class="benefits__container--svg">
                         <svg class="benefits__icon">
                             <use href="./images/icons.svg#icon-our-benefits__antenna"></use>
                         </svg>
+                    </div>
                         <h3 class="benefits__title">Внимание к деталям</h3>
                         <p class="benefits__text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
+
                     <li class="benefits__item">
+                        <div class="benefits__container--svg">
                         <svg class="benefits__icon">
                             <use href="./images/icons.svg#icon-our-benefits__clock"></use>
                         </svg>
+                        </div>
                         <h3 class="benefits__title">Пунктуальность</h3>
                         <p class="benefits__text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
+
                     <li class="benefits__item">
+                        <div class="benefits__container--svg">
                         <svg class="benefits__icon">
                             <use href="./images/icons.svg#icon-our-benefits__diagram"></use>
                         </svg>
+                        </div>
                         <h3 class="benefits__title">Планирование</h3>
                         <p class="benefits__text">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
+
                     <li class="benefits__item">
+                        <div class="benefits__container--svg">
                         <svg class="benefits__icon">
                             <use href="./images/icons.svg#icon-our-benefits__astronaut"></use>
                         </svg>
+                        </div>
                         <h3 class="benefits__title">Современные технологии</h3>
                         <p class="benefits__text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -145,7 +164,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- activity -->
         <!-- <section class="activity">
@@ -393,8 +412,8 @@
     -->
     </main>
 
-        <!-- footer -->
-        <!-- <footer class="footer">
+    <!-- footer -->
+    <!-- <footer class="footer">
         <div class="container container--foter">
 
             <div class="contact-us">
@@ -462,9 +481,9 @@
                 <use href="./images/modal__close-btn.svg#icon-close"></use>
             </svg> -->
 
-        <!-- order form -->
+    <!-- order form -->
 
-        <!-- <form>
+    <!-- <form>
                 <div class="order" role="group" aria-label="order-contact-details">
                     <p class="order__text">Оставьте свои данные, мы вам перезвоним</p>
 
@@ -514,7 +533,7 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
-        <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 

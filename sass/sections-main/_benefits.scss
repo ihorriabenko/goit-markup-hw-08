@@ -1,23 +1,43 @@
 .benefits {
-    padding: 94px 0;
 
     &__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        padding: 60px 15px;
     }
 
     &__item {
-        max-width: 270px;
+        margin-bottom: 30px;
+        max-width: 450px;
     }
 
-    &__icon {
-        padding: 25px 100px;
+    &__container--svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 30px;
+        max-width: 100%;
+        height: 120px;
+
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    &__icons {
         margin-bottom: 30px;
         width: 70px;
         height: 70px;
 
         background: #F5F4FA;
         border-radius: 4px;
+    }
+
+    &__icon {
+        width: 70px;
+        height: 70px;
     }
 
     &__title {
@@ -28,7 +48,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        
+
         color: getColor('main');
     }
 
@@ -37,7 +57,47 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        
+
         color: getColor('secondary');
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .benefits {
+
+        &__list {
+            display: block;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .benefits {
+        &__item {
+            max-width: 354px;
+        }
+        &__container--svg {
+            max-width: 100%;
+            height: 120px;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .benefits {
+        padding: 94px 0;
+
+        &__item {
+            max-width: 270px;
+        }
     }
 }
