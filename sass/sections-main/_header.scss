@@ -1,6 +1,6 @@
 .container--header {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -134,7 +134,7 @@
 // @media
 
 // iphone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header {
         padding: 16px 15px;
 
@@ -282,17 +282,13 @@
 
 
 // ipad
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .logo {
         margin-right: 88px;
     }
 
     .header {
         padding: 21px 15px;
-
-        &__item:last-child {
-            margin-right: 84px;
-        }
     }
 
     .contacts {

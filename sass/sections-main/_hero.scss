@@ -54,7 +54,7 @@
 }
 
 // mobile
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(../../images/mobile/hero/hero__mobile.jpeg) center/cover no-repeat;
@@ -62,14 +62,14 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1999px) {
     .hero {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(../../images/tablet/hero/hero__tablet.jpeg) center/cover no-repeat;
     }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
     .hero {
         padding: 200px 0;
 

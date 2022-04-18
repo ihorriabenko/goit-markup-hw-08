@@ -191,6 +191,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -320,7 +323,7 @@ body {
   height: 16px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     padding: 16px 15px;
   }
@@ -441,15 +444,12 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     margin-right: 88px;
   }
   .header {
     padding: 21px 15px;
-  }
-  .header__item:last-child {
-    margin-right: 84px;
   }
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
