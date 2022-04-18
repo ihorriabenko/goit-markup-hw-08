@@ -84,6 +84,7 @@
     .benefits {
         &__item {
             max-width: 354px;
+            flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
         }
         &__container--svg {
             max-width: 100%;

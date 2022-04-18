@@ -3,16 +3,17 @@
     background-color: #2F303A;
 }
 
-.container--foter {
+.container--footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-us {
 
     &__logo {
-    @extend %logo;
-}
+        @extend %logo;
+    }
 
     &__logo-part {
         color: #ffffff;
@@ -114,7 +115,7 @@
     &__email {
         margin-right: 12px;
         padding: 15px 0 15px 15px;
-        width: 358px;
+
 
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -175,13 +176,133 @@
 
 @media screen and (max-width: 767px) {
 
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__address {
+            text-align: center;
+        }
+
+        &__item {
+            text-align: center;
+        }
+    }
+
+    .connect {
+        padding: 60px 0;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+
+    .subscribe {
+
+        &__title {
+            text-align: center;
+        }
+
+        &__button {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__email {
+            margin-right: 0;
+            max-width: 100%;
+        }
+
+        &__button {
+            max-width: 200px;
+        }
+    }
+
+    .container--footer {
+        flex-direction: column;
+    }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
+    .container--footer {
+        max-width: 633px;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__address {
+            text-align: center;
+        }
+
+        &__item {
+            text-align: center;
+        }
+    }
+
+    .connect {
+        padding: 5px 0 0;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+
+    .subscribe {
+        padding: 60px 0 0;
+        margin: 0 auto;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__button {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__email {
+            margin-right: 0;
+            width: 450px;
+        }
+
+        &__button {
+            max-width: 200px;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
 
-}
+    .subscribe {
 
+        &__email {
+            width: 358px;
+        }
+    }
+}
