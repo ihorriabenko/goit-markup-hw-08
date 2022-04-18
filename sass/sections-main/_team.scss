@@ -2,6 +2,8 @@
     padding: 60px 15px;
     background-color: #F5F4FA;
 
+
+
     &__title {
         margin-bottom: 50px;
 
@@ -35,7 +37,8 @@
     }
 
     &__container--inner {
-        padding: 30px 32px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     &__header {
@@ -84,7 +87,11 @@
 
     &__list-inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    &__item-inner:not(:last-child) {
+        margin-right: 10px;
     }
 
     &__icon {
