@@ -1,5 +1,5 @@
 .customers {
-    padding: 60px 15px;
+    padding: 60px 0;
 
     &__title {
         margin-bottom: 50px;
@@ -59,21 +59,14 @@
 
 }
 
-@media screen and (max-width: 449px) {
-    .customers {
-        &__list {
-            align-items: center;
-            justify-content: center;
-        }
-
-        &__item:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
 @media screen and (max-width: 767px) {
     .customers {
+        padding: 60px 0;
+        &__item {
+            margin-left: 15px;
+            margin-right: 15px;
+            flex-basis: calc((100% - 2 * 30px) / 2);
+        }
         &__item:nth-last-child(-n+2) {
             margin-bottom: 0;
         }
@@ -83,7 +76,9 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .customers {
         &__item {
-            width: 226px;
+            margin-left: 15px;
+            margin-right: 15px;
+            flex-basis: calc((100% - 3 * 30px) / 3);
         }
 
         &__item:nth-last-child(-n+3) {
