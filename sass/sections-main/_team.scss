@@ -123,7 +123,7 @@
     .team {
 
         &__item {
-            max-width: 354px;
+            width: 354px;
         }
 
         &__item:nth-last-of-type(-n+2) {

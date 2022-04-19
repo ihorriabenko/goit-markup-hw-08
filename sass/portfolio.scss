@@ -2,7 +2,6 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './base/base';
-@import './utils/extends';
-@import './sections-main/header';
-@import './sections-portfolio/projects';
-@import './sections-main/footer';
+@import './components/components';
+// sections
+@import './sections-portfolio/sections';

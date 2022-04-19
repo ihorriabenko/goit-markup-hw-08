@@ -2,14 +2,6 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './base/base';
-@import './utils/extends';
+@import './components/components';
 // index
-@import './sections-main/header';
-@import './sections-main/hero';
-@import './sections-main/benefits';
-@import './sections-main/activity';
-@import './sections-main/team';
-@import './sections-main/customers';
-@import './sections-main/footer';
-@import './sections-main/modal';
-
+@import './sections-main/sections';
