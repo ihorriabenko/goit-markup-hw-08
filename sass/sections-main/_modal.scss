@@ -23,7 +23,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    max-width: 528px;
+    width: calc(100% - 30px);
+    max-width: 450px;
     padding: 40px;
     border-radius: 4px;
 
@@ -77,10 +78,10 @@
     }
 
     &__container {
-    position: relative;
+        position: relative;
 
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     &__input {
@@ -133,8 +134,8 @@
 /* order__checkbox */
 .order {
     &__label-checkbox {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
 
         padding: 0 10px 0 34px;
         margin-bottom: 30px;
@@ -156,6 +157,7 @@
         position: absolute;
 
         margin-left: -24px;
+        bottom: 125px;
         width: 16px;
         height: 15px;
 
@@ -209,9 +211,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .order {
-    &__label-checkbox {
-        font-size: 12px;
-        line-height: 1.5;
+        &__label-checkbox {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
+    }
 }
